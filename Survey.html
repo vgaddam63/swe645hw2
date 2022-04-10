@@ -1,0 +1,124 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Swe645 HW1 </title>
+    <style>
+   body {
+            background-color: white;
+            font-family: Arial;
+            text-align: center;
+        }
+   form {
+            background-color: white;
+            max-width: 525px;
+            padding: 32px 22px;
+            margin: 48px auto;
+        }
+        .form-control input,
+        .form-control select,
+        .form-control textarea 
+        {
+            border: 1.5px solid#77;
+            border-radius: 2px;
+            font-family: inherit;
+            padding: 9px;
+            display: block;
+            width: 94%;
+        }
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"] {
+            display: inline-block;
+            width: auto;
+        }
+        .form-control {
+            text-align: left;
+            margin-bottom: 22px;
+        }
+        .form-control label {
+            display: block;
+             margin-bottom: 12px;
+        }  
+    </style>
+</head>
+<body>
+    <h1>Student Survey Form</h1>
+     <form id="form">
+         <div class="form-control">
+            <label for="fname" id="label-fname"> First Name </label>
+            <input type="text" id="fname"  />
+        </div>
+        <div class="form-control">
+            <label for="lname" id="label-lname"> Last Name </label>
+            <input type="text" id="lname" />
+        </div>
+        <div class="form-control">
+            <label for="street" id="label-street"> Street Address </label> 
+            <input type="text" id="street" />
+        </div>
+        <div class="form-control">
+            <label for="city" id="label-city"> City </label>
+ 			<input type="text" id="city" />
+        </div> 
+        <div class="form-control">
+            <label for="state" id="label-state"> State </label>
+ 			<input type="text" id="state" />
+        </div>
+        <div class="form-control">
+            <label for="zip" id="label-zip"> Zip </label> 
+            <input type="text" id="zip" />
+        </div>
+        <div class="form-control">
+            <label for="phone" id="label-phone"> Phone Number </label> 
+            <input type="text" id="phone" />
+        </div> 
+        <div class="form-control">
+            <label for="email" id="label-email"> Email </label>
+ 			<input type="email" id="email" />
+        </div>
+        <div class="form-control">
+            <label for="date"> Date of Survey </label>
+			<input type="date" id="date" name="survey-dt" placeholder="mm/dd/yyyy"/> 
+			<font color="grey"></font>
+        </div>
+        <div class="form-control">
+            <label>What do you like most about the campus? </label>
+            <label for="chk1"> <input type="checkbox" name="chk1">Students</label>
+            <label for="chk2"> <input type="checkbox" name="chk2">Location</label>
+            <label for="chk3"> <input type="checkbox" name="chk3">Campus</label>
+            <label for="chk4"> <input type="checkbox" name="chk4">Atmosphere</label>
+            <label for="chk5"> <input type="checkbox" name="chk5">Dorm rooms</label>
+            <label for="chk6"> <input type="checkbox" name="chk6">Sports</label>
+        </div>
+        <div class="form-control">
+            <label> What develops your interest in joining this University? </label>
+ 			<label for="rb1"> <input type="radio" id="rb1" name="rb">Friends </label>
+            <label for="rb2"> <input type="radio" id="rb2" name="rb">Television </label>
+            <label for="rb3"> <input type="radio" id="rb3" name="rb">Internet </label>
+            <label for="rb4"> <input type="radio" id="rb4" name="rb">Other </label>
+        </div>
+        <div class="form-control">
+            <label for="role" id="label-role">
+               How well do you recommend this University?
+            </label>
+            <select name="role" id="role">
+            	<option> </option>
+                <option>Very Likely</option>
+                <option>Likely</option>
+                <option>Unlikely</option>  </select>
+        </div>
+        <div class="form-control">
+            <label for="raffle" id="label-phone">
+               Raffle Numbers  <small>(Enter 10 digits between 1 to 100)</small>
+            </label>
+ 			<input type="text" id="raffle" />  
+        </div> 
+        <div class="form-control">
+            <label for="comment">Any additional comments</label>
+	        <textarea name="comment" id="comment"placeholder="Enter your comment here"></textarea>
+        </div>
+  		<button type="button" value="submit"> Submit </button>
+        <button type="button" value="cancel"> Cancel </button>
+    </form>
+</body>
+</html>
